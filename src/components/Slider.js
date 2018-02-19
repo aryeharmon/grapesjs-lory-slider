@@ -23,6 +23,11 @@ export default (dc, config = {}) => {
   dc.addType(sliderName, {
 
     model: defaultModel.extend({
+      init() {
+        const attrs = this.getAttributes();
+        attrs['data-slider'] = 1;
+        this.setAttributes(attrs);
+      },
       defaults: {
         ...defaultModel.prototype.defaults,
 
