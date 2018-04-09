@@ -18,7 +18,7 @@ export default (dc, config = {}) => {
           display: `inline-block`,
           position: 'relative',
           color: '#fff',
-          width: '100%',
+          // width: '100%',
           'margin-right': '10px',
           'vertical-align': 'top',
           'min-height': '130px',
